@@ -17,7 +17,7 @@ const App = () => {
 
       {/* Main - AllSections */}
       <main className="w-[90%] max-w-7xl mx-auto">
-        {/* TODO: Hero */}
+        {/* Hero */}
         <Hero />
 
         {/* TODO: About */}
