@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-6 z-50 w-full flex justify-center pointer-events-none">
       {/* FloatingGlassContainer */}
-      <div className="pointer-events-auto w-[90%] max-w-7xl rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg">
+      <div className="pointer-events-auto w-[90%] max-w-7xl rounded-2xl backdrop-blur-lg border border-white/10 shadow-lg">
         <div className="flex items-center justify-between px-6 h-16">
           {/* Logo */}
           <a href="#home">
@@ -29,8 +29,8 @@ const Navbar = () => {
                 href={`#${link.id}`}
                 className={`text-sm font-medium transition-all duration-300 ${
                   activeSection === link.id
-                    ? "text-[#fa614f]"
-                    : "text-white hover:text-[#fa614f]"
+                    ? "text-[var(--accent-primary)]"
+                    : "text-[var(--text-primary)] hover:text-[var(--accent-primary)]"
                 }`}
               >
                 {link.label}

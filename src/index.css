@@ -5,20 +5,48 @@
 @import "tailwindcss";
 
 /* GlobalStyles */
-@theme {
-  --primary-color: #170a24;
-  --secondary-color: #fa614f;
+:root {
+  /* Backgrounds */
+  --bg-primary: #170a24;
+  --bg-secondary: #0f051a;
+  --bg-surface: #1c0e34;
 
-  --tertiary-color: #8c01db;
-  --quaternary-color: #ffffff;
+  /* Border */
+  --border-color: rgba(255, 255, 255, 0.2);
 
-  --primary-gray: #4f4f4f;
-  --secondary-gray: #c1c1c1;
-  --tertiary-gray: #f4f5f8;
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #c1c1c1;
+  --text-inverted: #170a24;
 
-  --text-primary-color: #ffffff;
-  --text-secondary-color: #170a24;
-  --text-hover-color: #fa614f;
+  /* Accents */
+  --accent-primary: #fa614f;
+  --accent-secondary: #8c01db;
+
+  /* Grays */
+  --gray-1: #4f4f4f;
+  --gray-2: #c1c1c1;
+  --gray-bg: #f4f5f8;
+}
+
+/* LightTheme */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f5f8;
+  --bg-surface: #ffffff;
+
+  --border-color: rgba(0, 0, 0, 0.1);
+
+  --text-primary: #170a24;
+  --text-secondary: #4f4f4f;
+  --text-inverted: #ffffff;
+
+  --accent-primary: #fa614f;
+  --accent-secondary: #8c01db;
+
+  --gray-1: #4f4f4f;
+  --gray-2: #c1c1c1;
+  --gray-bg: #f4f5f8;
 }
 
 @layer base {
@@ -28,9 +56,44 @@
 
   body {
     font-family: "Outfit", sans-serif;
-    color: var(--text-primary-color);
-    background-color: var(--primary-color);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
+  }
+
+  /* CustomScrollbars */
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+
+  ::-webkit-slider-thumb {
+    background: linear-gradient(180deg, var(--accent-primary));
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      var(--accent-secondary),
+      var(--accent-primary)
+    );
+  }
+
+  /* FirefoxScrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-primary) #0a0a0a;
+  }
+
+  /* HideScrollbarsForCarousel */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::webkit-scrollbar {
+    display: none;
   }
 
   /* GradientTextStyle */
