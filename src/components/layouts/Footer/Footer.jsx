@@ -20,8 +20,8 @@ const Footer = () => {
               <img src={logo} alt="Hi ASIF Logo" className="w-45" />
             </a>
             <p className="text-sm text-(--text-secondary) leading-relaxed pt-5">
-              Building modern, scalable and performant web applications with
-              React & MERN stack.
+              Not better than anyone but different from the rest. Focus on your
+              growth, not others success.
             </p>
           </div>
 

@@ -19,9 +19,13 @@ const Hero = () => {
         {/* LeftItem - FloatingAnimatedQuote */}
         <div className="hidden lg:block hero-badge hero-badge-left text-center">
           <span className="quote-icon text-left">“</span>
-          <p>
+          {/* <p>
             Self-taught developer focused on learning and turning your ideas
             into powerful digital solutions that drive real business results.
+          </p> */}
+          <p>
+            Not better than anyone but different from the rest. Focus on your
+            growth, not others success.
           </p>
         </div>
 
