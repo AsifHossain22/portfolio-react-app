@@ -13,7 +13,7 @@ import Firebase from "../assets/icons/skills/firebase.svg";
 import ExpressJS from "../assets/icons/skills/express-js.svg";
 import ReactRouter from "../assets/icons/skills/react-router.svg";
 import RESTApi from "../assets/icons/skills/rest-api.svg";
-import MongoDB from "../assets/icons/skills/mongodb.svg";
+import MongoDB from "../assets/icons/skills/mongo-db.svg";
 import NextJS from "../assets/icons/skills/next-js.svg";
 
 export const skills = [
@@ -27,10 +27,10 @@ export const skills = [
   { name: "WordPress", logo: WordPress, bg: "#E8F1FF" },
   { name: "Tailwind", logo: Tailwind, bg: "#E6FBFF" },
   { name: "React", logo: React, bg: "#EAF9FF" },
+  { name: "React Router", logo: ReactRouter, bg: "#EAF9FF" },
   { name: "Node.js", logo: NodeJS, bg: "#E9FCE9" },
   { name: "Firebase", logo: Firebase, bg: "#FFF5E6" },
   { name: "Express.js", logo: ExpressJS, bg: "#F3F3F3" },
-  { name: "React Router", logo: ReactRouter, bg: "#EAF9FF" },
   { name: "REST API", logo: RESTApi, bg: "#FFF5E6" },
   { name: "MongoDB", logo: MongoDB, bg: "#E9FCE9" },
   { name: "Next.js", logo: NextJS, bg: "#F3F3F3" },

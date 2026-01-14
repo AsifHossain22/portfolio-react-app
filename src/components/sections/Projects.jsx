@@ -28,24 +28,24 @@ const Projects = () => {
           navigation
           spaceBetween={30}
           slidesPerView={3}
-          loop
-          autoplay={{ delay: 3000 }}
+          // loop
+          // autoplay={{ delay: 3000 }}
           breakpoints={{
             0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
         >
-          <motion.div
-            whileHover={{ y: -8 }}
-            transition={{ type: "spring", stiffness: 200 }}
-          >
-            {projectsData.map((project) => (
-              <SwiperSlide key={project.id}>
+          {projectsData.map((project) => (
+            <SwiperSlide key={project.id}>
+              <motion.div
+                whileHover={{ y: -8 }}
+                transition={{ type: "spring", stiffness: 200 }}
+              >
                 <ProjectCard project={project} onOpen={setActiveProject} />
-              </SwiperSlide>
-            ))}
-          </motion.div>
+              </motion.div>
+            </SwiperSlide>
+          ))}
         </Swiper>
 
         {/* Modal */}

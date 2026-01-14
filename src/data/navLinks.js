@@ -10,6 +10,6 @@ export const navLinks = [
   { id: "about", label: "About", icon: User },
   { id: "services", label: "Services", icon: Settings },
   { id: "projects", label: "Projects", icon: Folder },
-  { id: "testimonials", label: "Testimonials", icon: MessageSquare },
+  // { id: "testimonials", label: "Testimonials", icon: MessageSquare },
   { id: "contact", label: "Contact", icon: HiMail },
 ];

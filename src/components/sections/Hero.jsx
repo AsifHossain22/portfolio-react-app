@@ -4,8 +4,8 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import heroImage from "../../assets/images/hi-asif.jpg";
 import waveIcon from "../../assets/icons/wave-icon.png";
-import { motion } from "framer-motion";
 import { fadeUp, scaleIn, staggerContainer } from "../../hooks/animation";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -94,6 +94,7 @@ const Hero = () => {
               I’m <span className="text-(--accent-primary)">Asif</span>
             </motion.h1>
 
+            {/* TypedText */}
             <div className="text-lg md:text-3xl font-semibold h-10.5">
               <TypeAnimation
                 sequence={[
@@ -108,23 +109,23 @@ const Hero = () => {
                 repeat={Infinity}
               />
             </div>
-          </div>
 
-          {/* CallToActionButton */}
-          <div className="flex flex-col-reverse md:flex-row gap-7 md:gap-12 mb-14">
-            <a
-              href=""
-              className="cta-primary text-center border border-(--accent-primary) hover:bg-transparent hover:text-(--accent-primary) transition-all duration-300"
-            >
-              Download Resume
-            </a>
+            {/* CallToActionButton */}
+            <div className="flex flex-col md:flex-row gap-7 md:gap-12 mb-14">
+              <a
+                href="#contact"
+                className="cta-primary text-center border border-(--accent-primary) hover:bg-transparent hover:text-(--accent-primary) transition-all duration-300"
+              >
+                Hire Me
+              </a>
 
-            <a
-              href="#projects"
-              className="cta-outline text-center hover:bg-(--accent-primary) hover:text-(--text-inverted) transition-all duration-300"
-            >
-              View Projects
-            </a>
+              <a
+                href="#projects"
+                className="cta-outline text-center hover:bg-(--accent-primary) hover:text-(--text-inverted) transition-all duration-300"
+              >
+                View Projects
+              </a>
+            </div>
           </div>
         </div>
       </motion.div>

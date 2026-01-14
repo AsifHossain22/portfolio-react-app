@@ -1,8 +1,8 @@
 import {
   FaCode,
-  FaPlug,
   FaReact,
   FaServer,
+  FaPlug,
   FaTachometerAlt,
   FaTools,
 } from "react-icons/fa";
@@ -13,7 +13,7 @@ export const serviceData = [
     title: "Frontend Web Development",
     shortTitle: "Frontend Development",
     description:
-      "Build modern, responsive and visually appealing user interfaces using HTML, CSS, JavaScript, React and Tailwind CSS.",
+      "Craft modern, responsive user interfaces using HTML5, CSS3, Bootstrap, Tailwind and JavaScript for seamless user experiences.",
     icon: FaCode,
   },
   {
@@ -21,39 +21,39 @@ export const serviceData = [
     title: "React.js Application Development",
     shortTitle: "React Development",
     description:
-      "Develop fast, scalable and interactive single-page applications using React with clean component-based architecture.",
+      "Build fast, scalable and maintainable single-page applications leveraging React, React Router and modern state management.",
     icon: FaReact,
   },
   {
     id: "service-3",
-    title: "MERN Stack Web Development",
+    title: "MERN Stack Full-Stack Development",
     shortTitle: "MERN Stack",
     description:
-      "Create full-stack web applications using MongoDB, Express.js, React and Node.js with REST API integration.",
+      "Develop full-stack applications using MongoDB, Express.js, React and Node.js, with robust REST API integration.",
     icon: FaServer,
   },
   {
     id: "service-4",
-    title: "API Integration & Backend Services",
-    shortTitle: "API Integration",
+    title: "Backend & API Development",
+    shortTitle: "API & Backend",
     description:
-      "Design and integrate REST APIs, connect frontend applications to backend services and manage databases efficiently.",
+      "Design, develop, and integrate RESTful APIs and backend services using Node.js, Express.js and Firebase for scalable solutions.",
     icon: FaPlug,
   },
   {
     id: "service-5",
-    title: "UI Optimization & Performance",
-    shortTitle: "Performance",
+    title: "Website Performance & Optimization",
+    shortTitle: "Performance Optimization",
     description:
-      "Improve website speed, responsiveness, SEO structure and overall user experience across all devices.",
+      "Enhance website speed, SEO and responsiveness to deliver superior user experience across all devices.",
     icon: FaTachometerAlt,
   },
   {
     id: "service-6",
-    title: "Website Maintenance & Support",
+    title: "Maintenance & Support",
     shortTitle: "Maintenance",
     description:
-      "Fix bugs, add new features, refactor code and maintain existing websites and web applications.",
+      "Provide ongoing website maintenance, bug fixes, feature enhancements and code refactoring to ensure smooth operation.",
     icon: FaTools,
   },
 ];

@@ -23,7 +23,7 @@ const ProjectCard = ({ project, onOpen }) => {
       {/* Content */}
       <div className="p-4 space-y-3">
         <h3 className="text-xl font-semibold">{project.title}</h3>
-        <p className="text-sm text-gray-400">{project.shortDesc}</p>
+        <p className="text-sm text-gray-400">{project.shortDescription}</p>
 
         {/* TechStack */}
         <div className="flex flex-wrap gap-2">
@@ -49,7 +49,9 @@ const ProjectCard = ({ project, onOpen }) => {
           </div>
 
           <button
-            onClick={() => onOpen(project)}
+            onClick={() => {
+              onOpen(project);
+            }}
             className="text-sm text-(--accent-primary)"
           >
             View Details →
