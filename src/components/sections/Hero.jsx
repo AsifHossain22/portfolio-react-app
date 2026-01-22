@@ -24,7 +24,7 @@ const Hero = () => {
             into powerful digital solutions that drive real business results.
           </p> */}
           <p>
-            Not better than anyone but different from the rest. Focus on your
+            Not better than anyone but different from the rest. Focus on own
             growth, not others success.
           </p>
         </div>
