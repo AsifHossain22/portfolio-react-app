@@ -1,5 +1,5 @@
 import logo from "../../../assets/logos/hi-asif-logo.png";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { motion } from "framer-motion";
 
@@ -67,6 +67,11 @@ const Footer = () => {
                 href="https://x.com/_AsifHossain22"
                 target="_blank"
                 icon={<FaTwitter />}
+              />
+              <FooterIcon
+                href="https://www.facebook.com/hiasif22"
+                target="_blank"
+                icon={<FaFacebook />}
               />
               <FooterIcon
                 href="mailto:only1asif4you22@gmail.com"

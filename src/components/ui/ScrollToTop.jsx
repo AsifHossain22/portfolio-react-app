@@ -61,7 +61,8 @@ const ScrollToTop = () => {
           }}
           className="
             fixed bottom-20 md:bottom-6 right-6 z-50
-            h-12 w-12
+            h-5 w-5
+            px-5 py-4
             flex items-center justify-center
             rounded-xl
             bg-(--accent-primary)
@@ -72,7 +73,7 @@ const ScrollToTop = () => {
         >
           {/* Icon */}
           <motion.span className="relative">
-            <FaArrowUp size={18} />
+            <FaArrowUp size={15} />
           </motion.span>
         </motion.button>
       )}

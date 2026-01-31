@@ -14,7 +14,7 @@ export default function TabsViewClassic() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
         <button
           onClick={() => setActiveTab("experience")}
-          className={`p-4 rounded-xl font-medium transition-all
+          className={`p-4 rounded-xl font-medium transition-all cursor-pointer
             ${
               activeTab === "experience"
                 ? "bg-(--accent-primary) text-white"
@@ -26,7 +26,7 @@ export default function TabsViewClassic() {
 
         <button
           onClick={() => setActiveTab("education")}
-          className={`p-4 rounded-xl font-medium transition-all
+          className={`p-4 rounded-xl font-medium transition-all cursor-pointer
             ${
               activeTab === "education"
                 ? "bg-(--accent-primary) text-white"
