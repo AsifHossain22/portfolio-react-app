@@ -50,10 +50,19 @@ const About = () => {
 
         {/* TechnologiesIMaster */}
         <div className="">
-          <h6 className="text-4xl md:text-5xl text-center font-bold mb-5">
-            Technologies I{" "}
-            <span className="text-(--accent-primary)">Master</span>
-          </h6>
+          <div className="flex items-center justify-center">
+            <h6 className="text-4xl md:text-5xl text-center font-bold mb-5">
+              Technologies I{" "}
+              <span className="text-(--accent-primary)">Master</span>
+            </h6>{" "}
+            <span className="">
+              <img
+                src={sectionHeaderIcon}
+                alt=""
+                className="section-header-icon mb-3 ml-2"
+              />
+            </span>
+          </div>
           {/* SkillsMarquee */}
           <MarqueeSkills
             speed={70}

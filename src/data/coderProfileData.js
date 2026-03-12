@@ -1,7 +1,7 @@
 export const coderProfileData = {
   name: "Asif Hossain",
   age: "25",
-  role: "Frontend Developer, MERN Stack Developer",
+  role: "Frontend Developer, React & Next.js Developer, MERN Stack Developer",
   seniority: "Junior",
   nationality: "Bangladeshi",
   location: "Dubai, United Arab Emirates",
@@ -20,7 +20,6 @@ export const coderProfileData = {
     "GitHub",
     "TailwindCSS",
     "WordPress",
-    "React Router",
     "REST API",
     "Next.js",
   ],

@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 import { TypeAnimation } from "react-type-animation";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
-import heroImage from "../../assets/images/hi-asif.jpg";
+import heroImage from "../../assets/HiASIF.png";
 import waveIcon from "../../assets/icons/wave-icon.png";
 import { fadeUp, scaleIn, staggerContainer } from "../../hooks/animation";
 import { motion } from "framer-motion";
@@ -106,6 +106,8 @@ const Hero = () => {
                   2000,
                   "Frontend Developer",
                   2000,
+                  "React & Next.js Developer",
+                  2000,
                   "MERN Stack Developer",
                   2000,
                 ]}
@@ -117,10 +119,12 @@ const Hero = () => {
             {/* CallToActionButton */}
             <div className="flex flex-col md:flex-row gap-7 md:gap-12 mb-14">
               <a
-                href="#contact"
+                href="https://drive.google.com/file/d/14lv8NzZWZ9kJB5uK41krwhrR1VbdjkUI/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="cta-primary text-center border border-(--accent-primary) hover:bg-transparent hover:text-(--accent-primary) transition-all duration-300"
               >
-                Hire Me
+                Download Resume
               </a>
 
               <a

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ServiceCard from "../ui/ServiceCard";
 import { serviceData } from "../../data/servicesData";
 import { staggerContainer } from "../../hooks/animation";
+import sectionHeaderIcon from "../../assets/icons/span-icon.png";
 
 const Services = () => {
   return (
@@ -16,9 +17,18 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <h2 className="text-4xl md:text-5xl font-bold">
-            My <span className="text-(--accent-primary)">Services</span>
-          </h2>
+          <div className="flex items-center justify-center">
+            <h2 className="text-4xl md:text-5xl font-bold">
+              My <span className="text-(--accent-primary)">Services</span>
+            </h2>
+            <span className="">
+              <img
+                src={sectionHeaderIcon}
+                alt=""
+                className="section-header-icon mt-4 ml-3"
+              />
+            </span>
+          </div>
         </motion.div>
 
         {/* ServiceContainer */}

@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { FaPaperPlane } from "react-icons/fa";
+import sectionHeaderIcon from "../../assets/icons/span-icon.png";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -34,7 +35,7 @@ const Contact = () => {
         "service_ws3j65a",
         "template_mu37ufb",
         formRef.current,
-        "rupGvam0VS5bgsv79"
+        "rupGvam0VS5bgsv79",
       )
       .then(
         () => {
@@ -45,7 +46,7 @@ const Contact = () => {
         () => {
           setLoading(false);
           setStatus("error");
-        }
+        },
       );
   };
 
@@ -62,9 +63,18 @@ const Contact = () => {
         className="w-full max-w-6xl"
       >
         {/* SectionHeader */}
-        <h2 className="text-4xl md:text-5xl text-center font-bold mb-16">
-          Get In <span className="text-(--accent-primary)">Touch</span>
-        </h2>
+        <div className="flex items-center justify-center">
+          <h2 className="text-4xl md:text-5xl text-center font-bold mb-16">
+            Get In <span className="text-(--accent-primary)">Touch</span>
+          </h2>
+          <span className="">
+            <img
+              src={sectionHeaderIcon}
+              alt=""
+              className="section-header-icon mb-15 ml-3"
+            />
+          </span>
+        </div>
 
         {/* FormContainer */}
         <div className="grid md:grid-cols-2 gap-14 items-center">

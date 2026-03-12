@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
 import { motion } from "framer-motion";
+import sectionHeaderIcon from "../../assets/icons/span-icon.png";
 
 import { useState } from "react";
 import projectsData from "../../data/projectData";
@@ -17,9 +18,18 @@ const Projects = () => {
     <section id="projects" className="py-28">
       <div className="w-[90%] max-w-7xl mx-auto">
         {/* SectionHeader */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          My <span className="text-(--accent-primary)">Projects</span>
-        </h2>
+        <div className="flex items-center justify-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+            My <span className="text-(--accent-primary)">Projects</span>
+          </h2>
+          <span className="">
+            <img
+              src={sectionHeaderIcon}
+              alt=""
+              className="section-header-icon mb-10 ml-3"
+            />
+          </span>
+        </div>
 
         {/* ProjectsSlider */}
         <Swiper
